@@ -55,7 +55,12 @@ nav ul a {
 */
 article>p {
     font-size: 25px;
+    font-weight: bold;
+    line-height: 1,5;
+    text-transform: uppercase;
+    text-align: center;
 }
+
 
 /* Adjustment sibling selector - Selects the element that is the very next sibling to the selected elements, if any extra */
 
