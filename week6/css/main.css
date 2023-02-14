@@ -1,0 +1,160 @@
+/* 
+    This is a css comment
+    Shortcut for adding comment is ctrl +/
+*/    
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: royalblue;
+}
+
+h1 {
+    color: aquamarine;
+}
+
+P {
+    background-color: red;
+}
+/* selecting multiple elements */
+
+h1, h2, h3, h4 {
+    text-decoration: underline;
+}
+/* selecting child elements */
+nav ul {
+    list-style: none;
+}
+/* selecting multiple child elements level */
+nav ul a {
+    color: lightpink;
+    text-decoration: none;  
+}
+
+/* selecting element with ID Value */
+#treatofweek {
+    background-color: brown;
+
+}
+
+.blue-link {
+    background-color: saddlebrown;
+    color: gold;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 20px;
+}
+
+.white-text {
+    color: antiquewhite;
+}
+
+/* 
+    Combinator 
+    direct child selector - will only seclect child of the parent
+*/
+article>p {
+    font-size: 25px;
+}
+
+/* Adjustment sibling selector - Selects the element that is the very next sibling to the selected elements, if any extra */
+
+h3+ul {
+    border: 1px solid black;
+}
+
+h3~p {
+    text-transform: uppercase;
+}
+
+/* attribute selector */
+
+[href="#treatofweek"] {
+    font-weight: bold;
+}
+
+/* [src="./images/coffee-shop.jpg"] {
+    border: 4px solid darkgreen;
+} */
+
+[src=".jpg"] {
+    border: 4px solid yellowgreen;
+}
+
+/* Psuedo Classes */
+/* Styling Navigation */
+nav ul a
+nav ul a:link, 
+nav ul a:visited {
+    background-color: chocolate;
+    /* horizontal vertical blur spread color  */
+    box-shadow: -2px 2px 4px 2px crimson;
+}
+
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* position selector */
+/* first child and last child */
+aside ul li:first-child {
+    font-weight: bold;
+}
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Styling Table */
+table {
+    border-collapse: collapse;
+}
+
+/* nth-child selector - even/odd */
+/* hex color value with 6 characters */
+tbody tr:nth-child(even) {
+    background-color: #d5836c;
+}
+
+/* Using nth-child with n */
+/* where n is 0,1,2,3... until number elements */
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid black;
+}
+
+/* using a formula in nth-child selector */
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 
+    css specificity 
+    Formula: In-line Style, ID, Class, Tag-name (0,0,0,0)
+*/
+
+/* (0,0,0,1) */
+footer {
+    background-color: aqua;
+}
+/* (0,0,0,2) */
+body footer {
+    background-color: orange;
+}
+/* (0,0,1,0) */
+.site-footer {
+    background-color: antiquewhite;
+}
+/* (0,0,0,2) */
+article h2 {
+    text-transform: uppercase;
+}
+/* (0,0,1,1) */
+footer.site-footer {
+    background-color: #d5836c;
+}
