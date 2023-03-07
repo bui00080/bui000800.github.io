@@ -5,31 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ho Chi Minh City</title>
+    <link rel="stylesheet" href="/midterm/css/main.css">
+    <style type="stylesheet"></style>
 </head>
 <body>
-    <div class="container">
     <header>
+        <div class="container">
         <h1>
             THE CITY NEVER SLEEPS
         </h1>
+        <div class="img-word">
+            <img src="./midterm-images/nightlife-in-ho-chi-minh-city-1.jpg" alt="Ho Chi Minh City" style="width: 100%;">
+            <div class="centered">The City Never Sleep</div>
+        </div>            
+        <div class="menu">
+            <div><a href="#Story">Story</a></div>
+            <div><a href="#Facts">Facts</a></div>
+            <div><a href="#More about us">More about us</a></div>
+        </div>
     <main>
-        <a href="#Story">Story</a>
-        <a href="#Facts">Facts</a>
-        <a href="#More about us">More about us</a>
+        <div class="top-banner"></div>
         <h2>One of the most exciting cities at night</h2>
-        <img src="./midterm-images/Ho_Chi_Minh_City_Skyline_(night).jpg" title="Ho Chi Minh City Skyline">
-        <section id="Story">
-            <p>
-                As one of the largest cities in Vietnam, Ho Chi Minh City is known by many tourists with a very special name: "the city that never sleeps".
-                Most of the tourist services as well as dining and entertainment in the city are only really bustling after 9 pm regardless of the day of the week.
-                There are many places such as Bui Vien walking street, which is known as a fun place for foreign tourists.
-                If you don't like the hustle and bustle, you can go to the sidewalk cafes, those shops are everywhere, just buy a glass of water and you can sit until the shop closes.
-                Most especially, if visitors have difficulty sleeping or time zone difference, they can always find hawker stalls on the sidewalk. A bowl of noodles at 2 a.m. will definitely help you relax and fall asleep easier. 
-                What's more, there are many night markets, which usually sell until 5am.
-                In addition to nightlife activities, Ho Chi Minh City is also chosen by many food lovers as a destination. 
-                In addition to bread, pho, there are many famous breakfast dishes such as sticky rice, broken rice, etc.
-            </p>
-        </section> 
+        <div class="article">
+            <img class="article-image" src="./midterm-images/Ho_Chi_Minh_City_Skyline_(night).jpg" title="Ho Chi Minh City Skyline">
+            <section id="Story">
+                <p class="article-body">
+                    As one of the largest cities in Vietnam, Ho Chi Minh City is known by many tourists with a very special name: "the city that never sleeps".
+                    Most of the tourist services as well as dining and entertainment in the city are only really bustling after 9 pm regardless of the day of the week.
+                    There are many places such as Bui Vien walking street, which is known as a fun place for foreign tourists.
+                    If you don't like the hustle and bustle, you can go to the sidewalk cafes, those shops are everywhere, just buy a glass of water and you can sit until the shop closes.
+                    Most especially, if visitors have difficulty sleeping or time zone difference, they can always find hawker stalls on the sidewalk. A bowl of noodles at 2 a.m. will definitely help you relax and fall asleep easier. 
+                    What's more, there are many night markets, which usually sell until 5am.
+                    In addition to nightlife activities, Ho Chi Minh City is also chosen by many food lovers as a destination. 
+                    In addition to bread, pho, there are many famous breakfast dishes such as sticky rice, broken rice, etc.
+                </p>       
+            </section>     
         <section id="Facts">
             <h3>
                 Interesting facts about Ho Chi Minh City
@@ -41,21 +51,51 @@
                 <li>Peak hours are usually from 5pm to 7pm. If you want to see the uniqueness of Ho Chi Minh traffic, it is the right time, but it will be a bit noisy and smoky.</li>
             </ul>
         </section>
-        <section>
+        <section id="More about us">
+        <div class="box-model">   
             <h4>
                 Want to know more about Ho Chi Minh City?
             </h4>
             <table>
                 <form action="thanks.html" method="get">
                     <div>
-                        <label for="fullname">Your name</label>
+                        <p>
+                            <label for="fullname">Your name</label>
+                        </p>    
                         <input type="text" id="fullname" name="fullname">
                     </div>
+                    <div>
+                        <p>
+                            <label for="youremail">Your email</label>
+                        </p>
+                        <input type="text" id="youremail" name="youremail">
+                    </div>
+                    <div>
+                        <p>
+                            <label for="yourmessage">Your Message</label>
+                        </p>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div>
+                        <h3>Do you want to receive more information?</h3>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="past" checked>
 
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="past">
+
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="maybe" name="past" checked>
+                    </div>
+                    <button type="send">Send</button>
                 </form>
             </table>
+        </div>     
         </section>
-    </main>  
+    </main>
+    <footer class="site-footer">
+        Copyright &copy; Bui H, 2023
+    </footer>  
     </header>
     </div>
 </body>
