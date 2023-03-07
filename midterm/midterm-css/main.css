@@ -40,13 +40,16 @@ h1{
     color: blueviolet;
     text-decoration: none;
 }
+
 .menu div a:hover{
     color: red;
 }
+
 .menu .middle{
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
+
 .centered {
     position: absolute;
     top: 50%;
