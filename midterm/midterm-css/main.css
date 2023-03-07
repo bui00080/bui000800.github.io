@@ -33,8 +33,20 @@ h1{
   padding: 20px;
   font-size: 30px;
   width:30%
+  
 }
-
+.menu div a,
+.menu div a:visited{
+    color: blueviolet;
+    text-decoration: none;
+}
+.menu div a:hover{
+    color: red;
+}
+.menu .middle{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
 .centered {
     position: absolute;
     top: 50%;
